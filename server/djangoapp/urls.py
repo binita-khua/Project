@@ -15,6 +15,16 @@ urlpatterns = [
     path(route='about', view=views.about, name='about'),
     # path for contact us view
     path(route='contact', view=views.contact, name='contact'),
+    # path for login
+    #week 2 t 5
+    path(route='login/', view=views.login_request, name='login'),
+    # path for logout
+    #week 2 t 5
+    path(route='logout/', view=views.logout_request, name='logout'),
+    # path for registration
+    #week 2 t7
+    path('registration/', view=views.registration_request, name='registration'),
+
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
